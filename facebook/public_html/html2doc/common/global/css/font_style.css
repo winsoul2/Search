@@ -1,0 +1,72 @@
+body{
+	font-family: "TH Sarabun PSK";
+}
+p{
+	font-family: "TH Sarabun PSK";
+	font-size: 1.25em;
+}
+.THsarabun {
+	font-family: "TH Sarabun PSK";
+	font-weight: normal;
+}
+
+.THsarabunB {
+	font-family: "TH Sarabun PSK";
+	font-weight: bold;
+}
+
+.required {
+	color: red;
+}
+
+h2{
+		font-family: "TH Sarabun PSK";
+}
+
+.color-red{
+		color:#F00;
+	}
+
+.font-18 {
+	font-size: 18px;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.color-orange{
+		color:#FF8000;
+}
+
+.font-16 {
+	font-size: 16px;
+}
+
+.font-14 {
+	font-size: 14px;
+}
+
+.font-20 {
+	font-size: 20px;
+}
+
+.font-22 {
+	font-size: 22px;
+}
+
+.font-24 {
+	font-size: 24px;
+}
+
+.img-float{
+	float: left;
+}
+
+.color-sky{
+	color:#1480B3;
+}

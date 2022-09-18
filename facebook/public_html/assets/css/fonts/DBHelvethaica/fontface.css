@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'DBHelvethaica';
+    src: url('DB HelvethaicaMon X v3.2.ttf');
+    src: url('font/DB Helvethaica X Bd Cond It v3.2.ttf') format('truetype'),
+    font-weight: normal;font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'DBHelvethaica X Med';
+    src: url('DB Helvethaica X Med v3.2.ttf');
+    src: url('font/DB Helvethaica X Med v3.2.ttf') format('truetype'),
+    font-weight: normal;font-style: normal;
+}*/

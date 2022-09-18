@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'TH Sarabun PSK';
+    src: url('../fonts/thsarabun-webfont.eot');
+    src: url('../fonts/thsarabun-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/thsarabun-webfont.woff') format('woff'),
+         url('../fonts/thsarabun-webfont.ttf') format('truetype'),
+         url('../fonts/thsarabun-webfont.svg#THSarabunPSKRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Thai Sans Neue Regular';
+    src: url('../fonts/ThaiSansNeue-Regular.otf');
+    src: url('../fonts/ThaiSansNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,16 @@
+body{ font-size:12px; color:#444444; }
+a{ color:#235A81; text-decoration:none; }
+/*table{ width:100%;}*/
+thead tr{ background-color:#CCCCCC; color:#235A81; }
+tfoot tr{ background-color:#CCCCCC; color:#235A81; font-weight:bold; }
+/*table td, table th{ border:1px solid #BBBBBB; }*/
+.tbl td, .tbl th{ border:1px solid #BBBBBB; }
+.tbl{width:100%;}
+.center{ text-align:center; }
+.right{ text-align:right; }
+span.pre{ color:red; font-weight:bold; }
+tr.strip{ background-color:#DFDFDF; }
+tr.hover{ background-color:#D3DCE3; }
+select { width:200px;}
+table{ font-size:12px;}
+

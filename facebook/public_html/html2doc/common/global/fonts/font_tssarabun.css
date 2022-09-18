@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'ts-saraban';
+  src: url('../font/thsarabun-webfont.woff') format('woff'), 
+       url('../font/thsarabun-webfont.ttf') format('truetype'); 
+}
+body, table tr td,a:link{
+    font-family: 'ts-saraban', Fallback, sans-serif;
+}
+.headtable td{
+	text-align:center;
+	background:#a3b2cc;
+	font-weight:bold;
+}
+.footertable td{
+	text-align:center;
+	background:#ccc;
+	font-weight:bold;
+}
+td,a:link{
+	padding:5px;
+	font-size:18px;
+}
+.textheader{
+	font-size:24px;
+	margin:20px;
+	font-weight:bold;
+}
+table{
+	margin-bottom:20px;
+}

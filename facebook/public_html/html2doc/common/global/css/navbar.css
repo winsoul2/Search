@@ -1,0 +1,31 @@
+.navbar-default {
+    background-image: url('../img/h2.png') !important;
+    height: 53px;
+}
+
+#stacked-menu {
+    background-color: #f4f4f4 !important;
+    /*border: 1px solid #1493B3 !important;*/
+    margin-left: 0px;
+    color: black !important;
+}
+
+ a.head {
+    color: black !important;
+    font-weight: bold !important;
+    /*border-bottom: 2px solid #E4E4E4 !important;
+     */
+    border-top: 1px solid #fff !important;
+    border-bottom: 1px solid #dbdbdb !important;
+}
+
+ a.child{
+    color: #676464 !important;
+    font-weight: bold !important;
+
+}
+
+.nav-stacked>li+li {
+    margin-top: 0px !important;
+    margin-left: 0 !important;
+}

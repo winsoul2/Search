@@ -1,0 +1,55 @@
+.page {
+                font                                                                                       : 9px tahoma;
+                font-weight                                        : bold;  
+                color                                                                      : #0280D5;          
+                padding                                                                : 1px 3px 1px 3px;
+}             
+ 
+.pagelink {
+                font                                                                                       : 9px tahoma;
+                font-weight                                        : bold;
+                color                                                                      : #000000;
+                text-decoration                : underline;
+                padding                                                                : 1px 3px 1px 3px;
+}
+.go {
+                BORDER: #59990e 1px solid;
+                PADDING-RIGHT: 0.38em;
+                PADDING-LEFT: 0.38em;
+                FONT-WEIGHT: bold;
+                FONT-SIZE: 105%;
+                BACKGROUND: url(../../application/hr3/hr_report/images/hdr_bg.png) #6eab26 repeat-x 0px -90px;
+                FLOAT: left;
+                PADDING-BOTTOM: 0px;
+                COLOR: #fff;
+                MARGIN-RIGHT: 0.38em;
+                PADDING-TOP: 0px;
+                HEIGHT: 1.77em
+}
+#bf .go {
+                FLOAT: none
+}
+.go:hover {
+                BORDER: #3f8e00 1px solid;
+                BACKGROUND: url(../../application/hr3/hr_report/images/hdr_bg.png) #63a218 repeat-x 0px -170px;
+}
+.q {
+                BORDER-RIGHT: #5595CC 1px solid;
+                PADDING-RIGHT: 0.7em;
+                BORDER-TOP: #5595CC 1px solid;
+                PADDING-LEFT: 0.7em;
+                FONT-WEIGHT: normal; FONT-SIZE: 105%;
+                FLOAT: left;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px 0.38em 0px 0px;
+                BORDER-LEFT: #5595CC 1px solid;
+                WIDTH: 300px;
+                PADDING-TOP: 0.29em;
+                BORDER-BOTTOM: #5595CC 1px solid;
+                HEIGHT: 1.39em
+ 
+}
+.tabberlive .tabbertab {
+                background-color:#FFFFFF;
+  height:200px;
+}

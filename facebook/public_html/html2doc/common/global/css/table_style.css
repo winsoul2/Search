@@ -1,0 +1,38 @@
+.table {
+    font-family:"TH Sarabun PSK";
+    border: 0.5px solid #1493B3;
+    border-collapse: inherit;
+    border-spacing: 0;
+}
+
+.table > tbody > tr > td {
+    border-top: 0.5px solid #1493B3;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.table > thead > tr > th {
+    border-bottom: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.table-striped > tbody > tr > td {
+    background-color: #EEEFE9;
+}
+
+.table > thead > tr {
+    color: white;
+    background-color: #1493B3;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #EBF5F3;
+}
+.table > tfoot > tr > td {
+    border-top: 0.5px solid #1493B3;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #1493B3;
+}

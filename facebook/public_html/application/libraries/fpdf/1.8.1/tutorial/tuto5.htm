@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Tables</title>
+<link type="text/css" rel="stylesheet" href="../fpdf.css">
+</head>
+<body>
+<h1>Tables</h1>
+This tutorial shows different ways to make tables.
+<div class="source">
+<pre><code>&lt;?php
+<span class="kw">require(</span><span class="str">'fpdf.php'</span><span class="kw">);
+
+class </span>PDF <span class="kw">extends </span>FPDF
+<span class="kw">{
+</span><span class="cmt">// Load data
+</span><span class="kw">function </span>LoadData<span class="kw">(</span>$file<span class="kw">)
+{
+    </span><span class="cmt">// Read file lines
+    </span>$lines <span class="kw">= </span>file<span class="kw">(</span>$file<span class="kw">);
+    </span>$data <span class="kw">= array();
+    foreach(</span>$lines <span class="kw">as </span>$line<span class="kw">)
+        </span>$data<span class="kw">[] = </span>explode<span class="kw">(</span><span class="str">';'</span><span class="kw">,</span>trim<span class="kw">(</span>$line<span class="kw">));
+    return </span>$data<span class="kw">;
+}
+
+</span><span class="cmt">// Simple table
+</span><span class="kw">function </span>BasicTable<span class="kw">(</span>$header<span class="kw">, </span>$data<span class="kw">)
+{
+    </span><span class="cmt">// Header
+    </span><span class="kw">foreach(</span>$header <span class="kw">as </span>$col<span class="kw">)
+        </span>$<span class="kw">this-&gt;</span>Cell<span class="kw">(</span>40<span class="kw">,</span>7<span class="kw">,</span>$col<span class="kw">,</span>1<span class="kw">);
+    </span>$<span class="kw">this-&gt;</span>Ln<span class="kw">();
+    </span><span class="cmt">// Data
+    </span><span class="kw">foreach(</span>$data <span class="kw">as </span>$row<span class="kw">)
+    {
+        foreach(</span>$row <span class="kw">as </span>$col<span class="kw">)
+            </span>$<span class="kw">this-&gt;</span>Cell<span class="kw">(</span>40<span class="kw">,</span>6<span class="kw">,</span>$col<span class="kw">,</span>1<span class="kw">);
+        </span>$<span class="kw">this-&gt;</span>Ln<span class="kw">();
+    }
+}
+
+</span><span class="cmt">// Better table
+</span><span class="kw">function </span>ImprovedTable<span class="kw">(</span>$header<span class="kw">, </span>$data<span class="kw">)
+{
+    </span><span class="cmt">// Column widths
+    </span>$w <span class="kw">= array(</span>40<span class="kw">, </span>35<span class="kw">, </span>40<span class="kw">, </span>45<span class="kw">);
+    </span><span class="cmt">// Header
+    </span><span class="kw">for(</span>$i<span class="kw">=</span>0<span class="kw">;</span>$i<span class="kw">&lt;</span>count<span class="kw">(</span>$header<span class="kw">);</span>$i<span class="kw">++)
+        </span>$<span class="kw">this-&gt;</span>Cell<span class="kw">(</span>$w<span class="kw">[</span>$i<span class="kw">],</span>7<span class="kw">,</span>$header<span class="kw">[</span>$i<span class="kw">],</span>1<span class="kw">,</span>0<span class="kw">,</span><span class="str">'C'</span><span class="kw">);
+    </span>$<span class="kw">this-&gt;</span>Ln<span class="kw">();
+    </span><span class="cmt">// Data
+    </span><span class="kw">foreach(</span>$data <span class="kw">as </span>$row<span class="kw">)
+    {
+        </span>$<span class="kw">this-&gt;</span>Cell<span class="kw">(</span>$w<span class="kw">[</span>0<span class="kw">],</span>6<span class="kw">,</span>$row<span class="kw">[</span>0<span class="kw">],</span><span class="str">'LR'</span><span class="kw">);
+        </span>$<span class="kw">this-&gt;</span>Cell<span class="kw">(</span>$w<span class="kw">[</span>1<span class="kw">],</span>6<span class="kw">,</span>$row<span class="kw">[</span>1<span class="kw">],</span><span class="str">'LR'</span><span class="kw">);
+        </span>$<span class="kw">this-&gt;</span>Cell<span class="kw">(</span>$w<span class="kw">[</span>2<span class="kw">],</span>6<span class="kw">,</span>number_format<span class="kw">(</span>$row<span class="

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Thai Sans Neue Regular';
+    src: url('ThaiSansNeue-Regular.otf');
+    src: url('ThaiSansNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('THSarabunNew.ttf');
+    src: url('THSarabunNew.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

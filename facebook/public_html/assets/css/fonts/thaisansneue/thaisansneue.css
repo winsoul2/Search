@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'thaisans_neueregular';
+    src: url('thaisansneue-regular.eot');
+    src: url('thaisansneue-regular.eot?#iefix') format('embedded-opentype'),
+         url('thaisansneue-regular.woff2') format('woff2'),
+         url('thaisansneue-regular.woff') format('woff'),
+         url('thaisansneue-regular.ttf') format('truetype'),
+         url('thaisansneue-regular.svg#thaisans_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-thaisans { font-family: 'thaisans_neueregular' ; }
